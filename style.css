@@ -837,7 +837,7 @@ h6 {
 
 @media (max-width:500px) {
   .footer-menu .logo {
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     padding-bottom: 20px;
@@ -924,7 +924,12 @@ h6 {
   width: 100%;
   padding: 0 20px;
 }
-
+.box2 {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 
 .navb {
   position: sticky;
@@ -1015,6 +1020,10 @@ h6 {
   color: #fff;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.navdl {
+  color: #fff;
 }
 
 .link img {
@@ -1188,4 +1197,112 @@ footer .nav-link:hover {
 
 .social-links svg path {
   fill: #fff;
+}
+
+
+
+.catergoryItms {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catergoryItms .product-item {
+  margin: 0;
+
+}
+
+@media (max-width:700px) {
+  .tabs-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width:600px) {
+  .catergoryItms .product-item {
+    width: 100%;
+
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  background-image: url(./logos/p2.png);
+  background-size: cover;
+}
+.header2{
+    background-image: url(./logos/p3.png);
+}
+
+.header h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+
+.aboutbox {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.aboutbox img {
+  width: 550px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.aboutbox p {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.fx .aboutbox:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width:1200px) {
+  .aboutbox p {
+    font-size: .9rem;
+    line-height: 1.5;
+
+  }
+}
+
+@media (max-width:1000px) {
+  .aboutbox {
+    flex-direction: column;
+  }
+
+  .fx .aboutbox:nth-child(even) {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:700px) {
+  .dont{
+    padding: 0 20px !important;
+  }
+  .header{
+    height: 250px;
+  }
+  .header h1{
+    font-size: 2rem;
+  }
+  .aboutbox img {
+    width: 100%;
+    height: auto;
+  }
 }
