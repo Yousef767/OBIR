@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+body[dir=rtl] {
+  font-family: "Cairo", sans-serif !important;
+  letter-spacing: 0;
+}
+body[dir=rtl] * {
+  font-family: "Cairo", sans-serif;
+}
+body[dir=rtl] h1,
+body[dir=rtl] h2,
+body[dir=rtl] h3,
+body[dir=rtl] h4,
+body[dir=rtl] h5,
+body[dir=rtl] h6 {
+  font-family: "Cairo", sans-serif !important;
+}
+body[dir=rtl] .menu-list {
+  padding: 0;
+}
+body[dir=rtl] .social-links ul {
+  padding: 0;
+}
+body[dir=rtl] .banner-ad .banner-content .sale:after {
+  right: auto;
+  left: 0;
+}
+body[dir=rtl] .banner-ad .banner-content .categories {
+  font-family: "Cairo", sans-serif !important;
+}
+body[dir=rtl] .display-4 {
+  font-size: calc(1rem + 2.7vw) !important;
+}/*# sourceMappingURL=tyle.css.map */

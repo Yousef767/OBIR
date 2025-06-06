@@ -87,6 +87,8 @@ CSS STRUCTURE:
 /*--------------------------------------------------------------
 /** 1. VARIABLES
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
 :root {
   /* widths for rows and containers
      */
@@ -157,6 +159,7 @@ body {
   --bs-danger-rgb: 249, 235, 231;
   --bs-warning-rgb: 255, 249, 235;
   --bs-info-rgb: 230, 243, 250;
+  overflow-x: hidden;
 }
 
 .btn-primary {
@@ -924,6 +927,7 @@ h6 {
   width: 100%;
   padding: 0 20px;
 }
+
 .box2 {
   max-width: 1300px;
   width: 100%;
@@ -1238,8 +1242,9 @@ footer .nav-link:hover {
   background-image: url(./logos/p2.png);
   background-size: cover;
 }
-.header2{
-    background-image: url(./logos/p3.png);
+
+.header2 {
+  background-image: url(./logos/p3.png);
 }
 
 .header h1 {
@@ -1292,17 +1297,102 @@ footer .nav-link:hover {
 }
 
 @media (max-width:700px) {
-  .dont{
+  .dont {
     padding: 0 20px !important;
   }
-  .header{
+
+  .header {
     height: 250px;
   }
-  .header h1{
+
+  .header h1 {
     font-size: 2rem;
   }
+
   .aboutbox img {
     width: 100%;
     height: auto;
   }
+}
+
+body[dir=rtl] {
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 0;
+}
+
+body[dir=rtl] h1,
+body[dir=rtl] h2,
+body[dir=rtl] h3,
+body[dir=rtl] h4,
+body[dir=rtl] h5,
+body[dir=rtl] h6 {
+  font-family: "Cairo", sans-serif;
+}
+
+body[dir=rtl] .menu-list {
+  padding: 0;
+}
+
+body[dir=rtl] .social-links ul {
+  padding: 0;
+}
+
+body[dir=rtl] .banner-ad .banner-content .sale:after {
+  right: auto;
+  left: 20px;
+  content: "تخفيض";
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 0;
+}
+
+body[dir=rtl] .banner-ad .banner-content .categories {
+  font-family: "Cairo", sans-serif !important;
+}
+
+body[dir=rtl] .display-4 {
+  font-size: 2rem !important;
+}
+
+/*# sourceMappingURL=tyle.css.map */
+body[dir=rtl] .banner-title {
+  font-size: 2rem !important;
+}
+
+/*# sourceMappingURL=tyle.css.map */
+
+@media (max-width:700px) {
+  .banner-ad .banner-content .nav-link {
+    color: var(--primary-color) !important;
+    text-shadow: 0px 0px 5px #00000040;
+  }
+}
+
+.thumbnail-img {
+  height: 60px;
+  cursor: pointer;
+}
+
+.product-main-img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.color-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.text-success {
+  color: var(--light-primary-color) !important;
+}
+
+.product-item figure img {
+  width: 100% !important;
 }
