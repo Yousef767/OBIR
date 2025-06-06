@@ -1353,12 +1353,23 @@ body[dir=rtl] .display-4 {
   font-size: 2rem !important;
 }
 
-/*# sourceMappingURL=tyle.css.map */
+
 body[dir=rtl] .banner-title {
   font-size: 2rem !important;
 }
 
-/*# sourceMappingURL=tyle.css.map */
+@media (max-width:900px) {
+  body[dir=rtl] .ls {
+    left: auto;
+    right: -100%;
+  }
+}
+
+body[dir=rtl] .navb.activeMenu .ls {
+  right: 0;
+}
+
+
 
 @media (max-width:700px) {
   .banner-ad .banner-content .nav-link {
@@ -1400,10 +1411,11 @@ body[dir=rtl] .banner-title {
 @media screen and (max-width: 991px) {
   .dropdown-menu {
     padding: 0 20px;
-    line-height: 2.5;
+    line-height: 3;
     text-align: right;
   }
-  .dropdown-item{
+
+  .dropdown-item {
     padding: 0;
   }
 }
