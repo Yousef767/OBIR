@@ -1396,3 +1396,14 @@ body[dir=rtl] .banner-title {
 .product-item figure img {
   width: 100% !important;
 }
+
+@media screen and (max-width: 991px) {
+  .dropdown-menu {
+    padding: 0 20px;
+    line-height: 2.5;
+    text-align: right;
+  }
+  .dropdown-item{
+    padding: 0;
+  }
+}
